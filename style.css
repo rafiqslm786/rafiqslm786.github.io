@@ -1,0 +1,333 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  width:1000px;
+  font-family: Georgia;
+  transition:all .5s ease;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+
+}
+
+.clear{
+  overflow:hidden;
+
+}
+#header {
+	width: 100%;
+	height: 65px;
+	background: linear-gradient(to right,#000cffcc,white);
+}
+#footer {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(to left,#000cffcc,white);
+  font-family: georgia;
+}
+#footer p {
+	float: right;
+	color: white;
+	padding: 25px;
+	font-size: 20px;
+}
+#social-area{
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  margin-left: 47px;
+}
+#social-area ul{
+  height: 100%;
+  margin: 0px 0 0 0;
+  display: flex;
+  list-style: none;
+}
+#social-area li{
+	padding: 20px 10px;
+}
+#social-area a{
+  display: block;
+	background: white;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+	transition: .1s;
+	padding: 5px 2px 0px 2px;
+}
+#social-area a:hover{
+  background: #CF20F8;
+  color: white;
+}
+
+#header .find_me {
+  width: 100%;
+  height: 100%;
+
+}
+#header .find_me .left{
+  float: left;
+  height: 100%;
+  display: inline-block;
+}
+#header .find_me .left P {
+	height: 100%;
+	font-size: 35px;
+	color: white;
+	margin: 8px 40px 0px 61px;
+}
+#header .find_me .left img {
+	width: 65px;
+	height: 40px;
+	padding: 0px 0px 0px 55px;
+	display: inline-block;
+	margin: 10px 0px 0px 10px;
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+#header .find_me .social{
+  float: right;
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+#header .find_me .social ul {
+	height: 100%;
+	margin: 0px 0 0 0;
+	display: flex;
+  list-style: none;
+}
+#header .find_me .social > ul li {
+	padding: 20px 10px;
+}
+#header .find_me .social > ul li a {
+	display: block;
+	background: white;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+	transition: .1s;
+	padding: 5px 2px 0px 2px;
+}
+#header .find_me .social > ul li a:hover{
+  background: #CF20F8;
+  color: white;
+}
+section.profile {
+	width: 100%;
+	height: 540px;
+	background: linear-gradient(to right,#CF20F8,#02CFF1);
+	display: flex;
+}
+.profile .pic img {
+	margin: 55px 0 0 30px;
+	text-align: center;
+}
+.profile .pic P {
+	color: white;
+	margin: -20px 0 0px 120px;
+	font-size: 45px;
+	font-weight: bold;
+	text-shadow: 0px 4px 8px blue;
+}
+.profile .text p {
+	font-family: "Georgia";
+	color: white;
+	font-size: 26px;
+	margin: 170px 0 0 70px;
+  width: 390px;
+}
+.profile .text p>span{
+  font-family: "Copperplate Gothic Bold";
+}
+
+section.bg {
+  background: #D7D6D4;
+  width:100%;
+}
+
+.bg .manu {
+	width: 100%;
+	height: 75px;
+	background: linear-gradient(to right,#5b388d,#FCECCB,#74098f);
+}
+.bg .manu ul {
+	width: 90%;
+	height: 100%;
+	list-style: none;
+	margin: 0 auto;
+}
+.bg .manu ul li {
+  float: left;
+	height: 95%;
+	width: 150px;
+	padding: 0 25px;
+  padding-bottom: 0px;
+  position: relative;
+}
+.bg .manu ul li a {
+	width: 145px;
+	height: 20px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 7px 0px 7px 0px;
+	border-radius: 10px;
+	font-size: 18px;
+	background: linear-gradient(to right,#CF20F8,#02CFF1);
+	font-weight: bold;
+	transition: .5s;
+	border-bottom: 5px solid #FDBF03;
+	margin-top: 16px;
+}
+.bg .manu ul li#active a {
+	background: white;
+	color: #FDBF03;
+	font-family: "Copperplate Gothic Bold";
+	transform: scale(1.1);
+	margin-top: 12px;
+}
+.bg .manu ul li#active {
+	border-top: 5px solid #25B1F2;
+	margin-left: 60px;
+	margin-right: 24px;
+	padding: 0 8px;
+	padding-right: 0;
+	width: 153px;
+}
+.bg .manu ul li a:hover{
+  transform: scale(1.1);
+  background: white;
+  color: #FDBF03;
+  font-family: "Copperplate Gothic Bold";
+}
+.bg .manu ul li:nth-child(2) a:hover{
+  width: 180px;
+}
+.bg .manu ul li ul{
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  left: 0px;
+}
+.bg .manu ul li ul li {
+	height: 49px;
+	top: -16px;
+	left: 0px;
+}
+.bg .manu ul li:hover ul{
+  display: block;
+}
+.bg .manu ul li ul li a {
+	font-size: 15px;
+	width: 159px;
+	height: 30px;
+}
+
+.fa, .fas {
+	font-weight: 900;
+	margin-left: 8px;
+}
+.experiences{
+  width: 100%;
+}
+.experiences .web {
+	width: 100%;
+	height: 370px;
+}
+.web h2 {
+	width: 100%;
+	height: 50px;
+	background: #FDBF03;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: georgia;
+	line-height: 50px;
+	color: white;
+	margin-top: 30px;
+}
+.web P {
+	height: 195px;
+	background: white;
+	margin: 0 auto;
+	width: 400px;
+	font-size: 20px;
+	font-family: georgia;
+	padding: 36px;
+	border-radius: 15px;
+	margin-top: 25px;
+	float: left;
+	margin-left: 40px;
+	line-height: 25px;
+}
+.web img {
+	width: 400px;
+	height: 270px;
+	margin: 25px 0 0 40px;
+}
+.wordpress{
+  width: 100%;
+  height: 370px;
+}
+.wordpress img{
+  float: left;
+  margin-right:0px;
+}
+.wordpress p{
+  float: right;
+  margin-right: 45px;
+  margin-left: 0;
+  text-align: justify;
+}
+.web button {
+	background: #04CDF1;
+	color: white;
+	width: 84px;
+	height: 32px;
+	border: navajowhite;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: georgia;
+	margin: 10px 0 0px 150px;
+}
+.web button:hover{
+  background: #FDBF03;
+  color: white;
+}
+.graphics p{
+  text-align: justify;
+}
+.youtube{
+  margin-bottom: 30px;
+}
+.experiences .Wordpress{
+}
+
+.graphics{
+}
+
+.youtube p {
+  float: right;
+  margin-right: 45px;
+  margin-left: 0;
+  text-align: justify;
+}
+.youtube img{
+float: left;
+margin-right:0px;
+}

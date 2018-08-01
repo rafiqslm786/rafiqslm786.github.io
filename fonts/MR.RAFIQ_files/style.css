@@ -1,0 +1,195 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  width:1200px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+
+}
+
+.clear{
+  overflow:hidden;
+
+}
+#header {
+	width: 100%;
+	height: 65px;
+	background: linear-gradient(to right,#000cffcc,white);
+}
+#footer {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(to left,#000cffcc,white);
+  font-family: georgia;
+}
+
+#social-area {
+
+}
+
+#header .find_me {
+  width: 100%;
+  height: 100%;
+
+}
+#header .find_me .left{
+  float: left;
+  height: 100%;
+  display: inline-block;
+}
+#header .find_me .left P {
+	height: 100%;
+	font-size: 35px;
+	color: white;
+	margin: 8px 40px 0px 61px;
+}
+#header .find_me .left img {
+	width: 65px;
+	height: 40px;
+	padding: 0px 0px 0px 55px;
+	display: inline-block;
+	margin: 10px 0px 0px 10px;
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+#header .find_me .social{
+  float: right;
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+#header .find_me .social ul {
+	height: 100%;
+	margin: 0px 0 0 0;
+	display: flex;
+  list-style: none;
+}
+#header .find_me .social > ul li {
+	padding: 20px 10px;
+}
+#header .find_me .social > ul li a {
+	display: block;
+	background: white;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+	transition: .1s;
+	padding: 5px 2px 0px 2px;
+}
+#header .find_me .social > ul li a:hover{
+  background: #CF20F8;
+  color: white;
+}
+section.profile {
+	width: 100%;
+	height: 540px;
+	background: linear-gradient(to right,#CF20F8,#02CFF1);
+	display: flex;
+}
+.profile .pic img {
+	margin: 55px 0 0 30px;
+	text-align: center;
+}
+.profile .pic P {
+	color: white;
+	margin: -20px 0 0px 120px;
+	font-size: 45px;
+	font-weight: bold;
+	text-shadow: 0px 4px 8px blue;
+}
+.profile .text p {
+	font-family: "Georgia";
+	color: white;
+	font-size: 26px;
+	margin: 170px 0 0 36px;
+}
+.profile .text p>span{
+  font-family: "Copperplate Gothic Bold";
+}
+
+section.bg {
+  background: #D7D6D4;
+}
+
+.bg .manu {
+	width: 100%;
+	height: 75px;
+	background: linear-gradient(to right,#5b388d,#FCECCB,#74098f);
+}
+.bg .manu ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+.bg .manu ul li {
+  height: 100%;
+  width: 145px;
+  border-bottom: 5px solid#fff;
+	padding: 15px 0px 0 90px;
+}
+.bg .manu ul li a {
+	width: 145px;
+	height: 20px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 8px 1px 5px 0px;
+	border-radius: 10px;
+	font-size: 20px;
+	background: linear-gradient(to right,#CF20F8,#02CFF1);
+  font-weight: bold;
+  transition: .5s;
+}
+.bg .manu ul li a#active{
+  transform: scale(1.1);
+  background: white;
+  color: #FDBF03;
+  font-family: "Copperplate Gothic Bold";
+}
+.bg .manu ul li a:hover {
+  transform: scale(1.1);
+  background: white;
+  color: #FDBF03;
+  font-family: "Copperplate Gothic Bold";
+}
+.bg .manu ul li:nth-child(2) a{
+  width: 160px;
+}
+.bg .manu ul li:nth-child(1) a{
+  width: 130px;
+}
+.bg .manu ul li:nth-child(2) a:hover{
+  width: 180px;
+}
+.bg .manu ul li:nth-child(4) a:hover{
+  width: 180px;
+}
+.fa, .fas {
+	font-weight: 900;
+	margin-left: 8px;
+}
+.experiences.clear {
+
+}
+
+.web.clear {
+}
+
+.Wordpress.clear {
+}
+
+.graphics.clear {
+}
+
+.youtube.clear {
+}
