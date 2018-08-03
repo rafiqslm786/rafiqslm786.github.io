@@ -6,7 +6,10 @@
 body{
   width:1000px;
   font-family: Georgia;
-  transition:all .5s ease;
+  transition:all .5s ease; 
+  -webkit-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: normal;
@@ -65,6 +68,14 @@ h1,h2,h3,h4,h5,h6{
 #social-area a:hover{
   background: #CF20F8;
   color: white;
+}
+.fa-list.icon{
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	font-size: 30px;
+	color: #25acf5;
+	display:none;
 }
 
 #header .find_me {
@@ -134,22 +145,23 @@ section.profile {
 	margin: 55px 0 0 30px;
 	text-align: center;
 }
-.profile .pic P {
+ .profile .pic p{
 	color: white;
 	margin: -20px 0 0px 120px;
 	font-size: 45px;
 	font-weight: bold;
 	text-shadow: 0px 4px 8px blue;
+	font-family:"Copperplate Gothic Bold";
 }
 .profile .text p {
 	font-family: "Georgia";
 	color: white;
 	font-size: 26px;
 	margin: 170px 0 0 70px;
-  width: 390px;
+    width: 390px;
 }
 .profile .text p>span{
-  font-family: "Copperplate Gothic Bold";
+  font-family:"Copperplate Gothic Bold";
 }
 
 section.bg {
@@ -236,7 +248,12 @@ section.bg {
 	width: 159px;
 	height: 30px;
 }
-
+/*@keyframes animate{
+	0%{top:0;}
+	50%{ top:50%;transition:1s;}
+	100%{ top:100%;transition:2s;}
+}
+*/
 .fa, .fas {
 	font-weight: 900;
 	margin-left: 8px;
