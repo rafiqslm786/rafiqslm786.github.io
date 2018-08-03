@@ -362,66 +362,106 @@ section.profile {
 }
 
 .web{
-	min-height: 565px;
-	text-align: center;
-}
-.web p{
-	margin:0;
-	margin-top: 2.5%;
-	width: 88%;
-	font-size: 105%;
-	height: 190px;
-	margin-left: 1%;
+    min-height: 455px;
 	text-align: left;
 }
+.web p{
+	margin:0 auto;
+	margin-top: 3.5%;
+	width: 100%;
+	height: 40%;
+	font-size: 80%;
+	padding:0;
+	padding-top: 3%;
+	padding-bottom: 0;
+	float: none;
+	border-radius:0;
+}
+.web button {
+	width: 30%;
+	height: 20%;
+	font-size: 115%;
+}
+.web h2 {
+	margin-top:3.5%;
+    border-top: 3px solid #0cbaf3;
+	border-bottom: 3px solid #0cbaf3;
+	font-size: 115%;
+	line-height: 2em;
+}
+
+.web img{
+	width:100%;
+	margin:0 auto;
+	height: 46%;
+}
 .graphics{
+	min-height: 450px;
 	text-align:center;
+}
+.graphics img{
+	width:100%;
+	margin:0 auto;
+	height: 43%;
 }
 .graphics p {
 	line-height: 120%;
-	height: 170px;
+	height: 35%;
 	margin:0;
-	margin-left: 1%;
-}
-.web img{
-	width:98%;
-	margin:0;
+	border-radius:0;
+	font-size: 87%;
+	padding:0;
+	padding-top: 3%;
+	padding-bottom: 0;
+	margin-top: 2.5%;
 }
 .wordpress{
 	text-align:center;
+	min-height: 435px;
 }
 .wordpress p {
-	width: 88%;
-	margin:0;
+	width:100%;
+	margin:0 auto;
 	margin-top: 2.5%;
-	line-height: 118%;
-	height: 170px;
-	margin-right: 1%;
+	line-height: 120%;
+	padding:0;
+	padding-top: 3%;
+	padding-bottom: 0;
+	height: 35%;
+	font-size: 88%;
+	border-radius:0;
 }
 .wordpress img{
-	width: 98%;
-	margin:0;
-	margin-top: 2.5%;
+	width: 100%;
+	margin:0 auto;
+	height: 40%;
 }
 .youtube{
+	min-height: 450px;
 	text-align:center;
+	margin-bottom: 2%;
 }
 .youtube p{
-	width: 88%;
-	margin:0;
+	width: 100%;
+	margin:0 auto;
 	margin-top: 2.5%;
-	line-height: 118%;
-	height: 190px;
-	margin-right: 1%;
+	line-height: 120%;
+	height:42%;
+	font-size: 88%;
+	border-radius:0;
+	padding:0;
+	padding-top: 3%;
+	padding-bottom: 0;
+
 }
 .youtube img{
-	width:98%;
+	width:100%;
 	margin:0;
-	margin-top:0%;
+	height: 40%;
 }
 
 }
-}
+
 
 /*	Retina media query.
 	Overrides styles for devices with a 
