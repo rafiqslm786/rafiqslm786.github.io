@@ -135,11 +135,22 @@ h1,h2,h3,h4,h5,h6{
   background: #CF20F8;
   color: white;
 }
-section.profile {
+/*section.profile {
 	width: 100%;
 	height: 540px;
 	background: linear-gradient(to right,#CF20F8,#02CFF1);
 	display: flex;
+}*/
+section.profile {
+	width: 100%;
+	height: 540px;
+	
+  	background-image:url("images/bj1.jpg");
+	background-size:cover;
+	display: flex;
+}
+.image{
+	background-size:cover;
 }
 .profile .pic img {
 	margin: 55px 0 0 30px;
@@ -163,12 +174,17 @@ section.profile {
 .profile .text p>span{
   font-family:"Copperplate Gothic Bold";
 }
-
+/*
 section.bg {
   background: #D7D6D4;
   width:100%;
+}*/
+section.bg {
+  	background-image:url("images/b1.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+	width:100%;
 }
-
 .bg .manu {
 	width: 100%;
 	height: 75px;
@@ -181,12 +197,43 @@ section.bg {
 	margin: 0 auto;
 }
 .bg .manu ul li {
-  float: left;
+	float: left;
 	height: 95%;
 	width: 150px;
 	padding: 0 25px;
-  padding-bottom: 0px;
-  position: relative;
+	 padding-bottom: 0px;
+	  position: relative;
+
+}
+/*
+.bg .manu ul li:hover{
+	border-top: 5px solid #25B1F2;
+}
+*/
+.bg .manu ul>li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 85%;
+	height: 5px;
+	background: #25B1F2;
+	transition: .5s;
+	transform: scaleX(0);
+	transform-origin: right;
+	z-index: -1;
+	margin-left: 17px;
+}
+.bg .manu ul li:hover:before{
+		transform:scaleX(1);
+		z-index:1;
+}
+@keyframes animate{
+	0%{border:0%;}
+	25%{border:50%;}
+	50%{}
+	75%{}
+	100%{}
 }
 .bg .manu ul li a {
 	width: 145px;
@@ -198,7 +245,7 @@ section.bg {
 	padding: 7px 0px 7px 0px;
 	border-radius: 10px;
 	font-size: 18px;
-	background: linear-gradient(to right,#CF20F8,#02CFF1);
+	background-color:rgba(0,0,0,.5);
 	font-weight: bold;
 	transition: .5s;
 	border-bottom: 5px solid #FDBF03;
@@ -218,6 +265,8 @@ section.bg {
 	padding: 0 8px;
 	padding-right: 0;
 	width: 153px;
+}.bg .manu ul li#active:hover:before{
+	display:none;
 }
 .bg .manu ul li a:hover{
   transform: scale(1.1);
@@ -240,6 +289,13 @@ section.bg {
 	top: -16px;
 	left: 0px;
 }
+.bg .manu ul li>ul>li:hover{
+	border:none;
+
+}
+.bg .manu ul li>ul>li:hover:before{
+	display:none;
+}
 .bg .manu ul li:hover ul{
   display: block;
 }
@@ -247,6 +303,11 @@ section.bg {
 	font-size: 15px;
 	width: 159px;
 	height: 30px;
+}
+/*@keyframes animate{
+	0%{top:0;}
+	50%{ top:50%;transition:1s;}
+	100%{ top:100%;transition:2s;}
 }
 /*@keyframes animate{
 	0%{top:0;}
@@ -268,7 +329,8 @@ section.bg {
 .web h2 {
 	width: 100%;
 	height: 50px;
-	background: #FDBF03;
+	background-color: rgba(125,106,135,.5);
+	/*background: #FDBF03;*/
 	border-radius: 10px;
 	text-align: center;
 	font-size: 30px;
@@ -276,6 +338,7 @@ section.bg {
 	line-height: 50px;
 	color: white;
 	margin-top: 30px;
+	font-weight:bold;
 }
 .web P {
 	height: 195px;
@@ -303,6 +366,7 @@ section.bg {
 .wordpress img{
   float: left;
   margin-right:0px;
+background-color: rgba(0,215,255,1);
 }
 .wordpress p{
   float: right;
@@ -322,9 +386,11 @@ section.bg {
 	font-family: georgia;
 	margin: 10px 0 0px 150px;
 }
-.web button:hover{
-  background: #FDBF03;
-  color: white;
+.web button:hover {
+	background: #FCFCFC;
+	color: #0abaff;
+	font-weight: bold;
+	border: 1px solid #0abaff;
 }
 .graphics p{
   text-align: justify;

@@ -176,6 +176,7 @@ section.profile {
 .profile .text {
 	width: 100%;
 }
+
 .bg .manu{
 	display:none:
 }
@@ -267,6 +268,9 @@ section.profile {
 	  background: white;
 	  color: #FDBF03;
 	  font-family: "Copperplate Gothic Bold";
+}
+.bg .manu ul>li::before{
+	display:none;
 }
 .bg .manu ul li a:hover{
     transform:none;
@@ -425,6 +429,9 @@ section.profile {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+.bg .manu ul>li::before{
+	display:none;
 }
 .bg .manu ul li#active:hover a{
 	  background: white;
@@ -629,6 +636,9 @@ section.profile {
 	background: linear-gradient(to right,#CF20F8,#02CFF1);
 	color: white;
 }
+.bg .manu ul>li::before{
+	display:none;
+}
 .bg .manu ul li#active {
 	border: none;
 	float: none;
@@ -699,14 +709,14 @@ section.profile {
 	cursor:pointer;
 }
 .web{
-    min-height: 455px;
+   min-height: 538px;
 	text-align: left;
 }
 .web p{
 	margin:0 auto;
-	margin-top: 3.5%;
+	margin-top: 6.5%;
 	width: 100%;
-	height: 40%;
+	height: 35%;
 	font-size: 80%;
 	padding:0;
 	padding-top: 3%;
@@ -720,7 +730,7 @@ section.profile {
 	font-size: 115%;
 }
 .web h2 {
-	margin-top:3.5%;
+margin-top: 10.5%;
     border-top: 3px solid #0cbaf3;
 	border-bottom: 3px solid #0cbaf3;
 	font-size: 115%;
@@ -733,7 +743,7 @@ section.profile {
 	height: 46%;
 }
 .graphics{
-	min-height: 450px;
+	min-height: 500px;
 	text-align:center;
 }
 .graphics img{
@@ -750,16 +760,16 @@ section.profile {
 	padding:0;
 	padding-top: 3%;
 	padding-bottom: 0;
-	margin-top: 2.5%;
+	margin-top: 6.5%;
 }
 .wordpress{
 	text-align:center;
-	min-height: 435px;
+	min-height: 500px;
 }
 .wordpress p {
 	width:100%;
 	margin:0 auto;
-	margin-top: 2.5%;
+	margin-top: 6.5%;
 	line-height: 120%;
 	padding:0;
 	padding-top: 3%;
@@ -771,19 +781,19 @@ section.profile {
 .wordpress img{
 	width: 100%;
 	margin:0 auto;
-	height: 40%;
+	height: 42%;
 }
 .youtube{
-	min-height: 450px;
+	min-height: 500px;
 	text-align:center;
 	margin-bottom: 2%;
 }
 .youtube p{
 	width: 100%;
 	margin:0 auto;
-	margin-top: 2.5%;
+	margin-top: 6.5%;
 	line-height: 120%;
-	height:42%;
+	height:35%;
 	font-size: 88%;
 	border-radius:0;
 	padding:0;
