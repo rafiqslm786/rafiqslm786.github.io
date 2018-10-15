@@ -176,7 +176,6 @@ section.profile {
 .profile .text {
 	width: 100%;
 }
-
 .bg .manu{
 	display:none:
 }
@@ -218,6 +217,111 @@ section.profile {
 	margin:0;
 	margin-left:3%;
 	margin-top: 2.5%;
+}
+/*
+.bg .manu {
+	width: 100%;
+	height: 78px;
+	position:absolute;
+	top: 65px;
+	right: 10px;
+	background:none;
+}
+.bg .manu ul {
+	width: 32%;
+	height: 54%;
+	float: right;
+}
+.bg .manu ul li {
+	float: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display:inline-block;
+	padding: 0;
+
+}
+.bg .manu ul li a {
+	width: 100%;
+	height: 23px;
+	display: inline-block;
+	margin: 0;
+}
+.bg .manu ul li#active a {
+	transform: none;
+	margin: 0;
+	width: 100%;
+	height: 23px;
+	display: inline-block;
+	background: linear-gradient(to right,#CF20F8,#02CFF1);
+	color: white;
+}
+.bg .manu ul li#active {
+	border: none;
+	float: none;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.bg .manu ul li#active:hover a{
+	  background: white;
+	  color: #FDBF03;
+	  font-family: "Copperplate Gothic Bold";
+}
+.bg .manu ul>li::before{
+	display:none;
+}
+.bg .manu ul li a:hover{
+    transform:none;
+	width:100%;
+	height: 23px;
+}
+.bg .manu ul li:nth-child(2) a:hover {
+	width: 100%;
+}
+.bg .manu ul ul li:nth-child(4) a{
+	display:block;
+	overflow:hidden;
+	transition:all .5s ease;
+}
+.bg .manu ul li ul {
+	float:none;
+	position: static;
+	margin: 0px;
+	display: none;
+	left: 0px;
+}
+.bg .manu ul li ul li {
+	height: 100%;
+	width: 100%;
+	top: 0px;
+}
+.bg .manu ul li:hover ul{
+  display: block;
+}
+.bg .manu ul li ul {
+	width: 100%;
+	position: static;
+	height: 120%;
+}
+.bg .manu ul li ul li a {
+	font-size: 15px;
+	width: 100%;
+	height: 32px;
+	background: white;
+	color: #FDBF03;
+	font-family: "Copperplate Gothic Bold";
+	padding: 7px 0px;
+}
+.bg .manu ul li>ul>li>a:hover{
+	width: 100%;
+	height: 32px;
+}
+*/
+.bg .manu{
+	display:none:
+
 }
 .bg .manu {
 	width: 100%;
@@ -317,6 +421,16 @@ section.profile {
 .bg .manu ul li>ul>li>a:hover{
 	width: 100%;
 	height: 32px;
+}
+.fa-list.icon{
+	position: absolute;
+	top: 3%;
+	right: 4%;
+	font-size: 30px;
+	color: #25acf5;
+	display:block;
+	background: transparent;
+	cursor:pointer;
 }
 .fa-list.icon{
 	position: absolute;
@@ -384,6 +498,12 @@ section.profile {
 .profile .text {
 	width: 100%;
 }
+section.bg {
+  	background-image:url("images/bg (1).jpg");
+	background-size:cover;
+	width:100%;
+	background-attachment:fixed;
+}
 .bg .manu {
 	width: 100%;
 	height: 78px;
@@ -484,15 +604,15 @@ section.profile {
 	width: 100%;
 	height: 32px;
 }
-.fa-list.icon{
+.fa-list.icon {
 	position: absolute;
-	top: 3%;
+	top: 0.5%;
 	right: 4%;
 	font-size: 30px;
 	color: #25acf5;
-	display:block;
+	display: block;
 	background: transparent;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .web{
@@ -700,7 +820,7 @@ section.profile {
 }
 .fa-list.icon{
 	position: absolute;
-	top: 3%;
+	top: .5%;
 	right: 4%;
 	font-size: 30px;
 	color: #25acf5;
@@ -709,14 +829,14 @@ section.profile {
 	cursor:pointer;
 }
 .web{
-   min-height: 538px;
+    min-height: 455px;
 	text-align: left;
 }
 .web p{
 	margin:0 auto;
-	margin-top: 6.5%;
+	margin-top: 3.5%;
 	width: 100%;
-	height: 35%;
+	height: 40%;
 	font-size: 80%;
 	padding:0;
 	padding-top: 3%;
@@ -730,7 +850,7 @@ section.profile {
 	font-size: 115%;
 }
 .web h2 {
-margin-top: 10.5%;
+	margin-top:3.5%;
     border-top: 3px solid #0cbaf3;
 	border-bottom: 3px solid #0cbaf3;
 	font-size: 115%;
@@ -743,7 +863,7 @@ margin-top: 10.5%;
 	height: 46%;
 }
 .graphics{
-	min-height: 500px;
+	min-height: 450px;
 	text-align:center;
 }
 .graphics img{
@@ -754,22 +874,22 @@ margin-top: 10.5%;
 .graphics p {
 	line-height: 120%;
 	height: 35%;
-	margin:0 auto;
+	margin:0;
 	border-radius:0;
 	font-size: 87%;
 	padding:0;
 	padding-top: 3%;
 	padding-bottom: 0;
-	margin-top: 6.5%;
+	margin-top: 2.5%;
 }
 .wordpress{
 	text-align:center;
-	min-height: 500px;
+	min-height: 435px;
 }
 .wordpress p {
 	width:100%;
 	margin:0 auto;
-	margin-top: 6.5%;
+	margin-top: 2.5%;
 	line-height: 120%;
 	padding:0;
 	padding-top: 3%;
@@ -781,19 +901,19 @@ margin-top: 10.5%;
 .wordpress img{
 	width: 100%;
 	margin:0 auto;
-	height: 42%;
+	height: 40%;
 }
 .youtube{
-	min-height: 500px;
+	min-height: 450px;
 	text-align:center;
 	margin-bottom: 2%;
 }
 .youtube p{
 	width: 100%;
 	margin:0 auto;
-	margin-top: 6.5%;
+	margin-top: 2.5%;
 	line-height: 120%;
-	height:35%;
+	height:42%;
 	font-size: 88%;
 	border-radius:0;
 	padding:0;

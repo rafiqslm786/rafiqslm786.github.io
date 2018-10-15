@@ -135,18 +135,14 @@ h1,h2,h3,h4,h5,h6{
   background: #CF20F8;
   color: white;
 }
-/*section.profile {
-	width: 100%;
-	height: 540px;
-	background: linear-gradient(to right,#CF20F8,#02CFF1);
-	display: flex;
-}*/
+/*background: linear-gradient(to right,#CF20F8,#02CFF1);*/
 section.profile {
 	width: 100%;
 	height: 540px;
 	
-  	background-image:url("images/bj1.jpg");
+  	background-image:url("images/laptop.jpg");
 	background-size:cover;
+	background-attachment:fixed;
 	display: flex;
 }
 .image{
@@ -174,17 +170,14 @@ section.profile {
 .profile .text p>span{
   font-family:"Copperplate Gothic Bold";
 }
-/*
+
 section.bg {
-  background: #D7D6D4;
-  width:100%;
-}*/
-section.bg {
-  	background-image:url("images/b1.jpg");
+  	background-image:url("images/image3.jpg");
 	background-size:cover;
-	background-attachment:fixed;
 	width:100%;
+	background-attachment:fixed;
 }
+
 .bg .manu {
 	width: 100%;
 	height: 75px;
@@ -309,11 +302,6 @@ section.bg {
 	50%{ top:50%;transition:1s;}
 	100%{ top:100%;transition:2s;}
 }
-/*@keyframes animate{
-	0%{top:0;}
-	50%{ top:50%;transition:1s;}
-	100%{ top:100%;transition:2s;}
-}
 */
 .fa, .fas {
 	font-weight: 900;
@@ -329,8 +317,7 @@ section.bg {
 .web h2 {
 	width: 100%;
 	height: 50px;
-	background-color: rgba(125,106,135,.5);
-	/*background: #FDBF03;*/
+	background-color: rgba(158,122,0,.5);
 	border-radius: 10px;
 	text-align: center;
 	font-size: 30px;
@@ -338,11 +325,10 @@ section.bg {
 	line-height: 50px;
 	color: white;
 	margin-top: 30px;
-	font-weight:bold;
 }
 .web P {
 	height: 195px;
-	background: white;
+	background-color: rgba(255,255,255,.9);
 	margin: 0 auto;
 	width: 400px;
 	font-size: 20px;
@@ -354,10 +340,47 @@ section.bg {
 	margin-left: 40px;
 	line-height: 25px;
 }
+
 .web img {
 	width: 400px;
 	height: 270px;
 	margin: 25px 0 0 40px;
+		position: relative;	
+}
+.web img:hover .content{
+	left: 50%
+}
+.content{
+	position: absolute;
+	top: 400px;
+	left: 0;
+
+}
+.content p{
+	height: 195px;
+	background-color: rgba(255,255,255,.9);
+	margin: 0 auto;
+	width: 400px;
+	font-size: 20px;
+	font-family: georgia;
+	padding: 36px;
+	border-radius: 15px;
+	margin-top: 25px;
+	float: left;
+	margin-left: 40px;
+	line-height: 25px;
+}
+.content h2{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(158,122,0,.5);
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: georgia;
+	line-height: 50px;
+	color: white;
+	margin-top: 30px;
 }
 .wordpress{
   width: 100%;
@@ -379,7 +402,7 @@ background-color: rgba(0,215,255,1);
 	color: white;
 	width: 84px;
 	height: 32px;
-	border: navajowhite;
+	border: none;
 	border-radius: 10px;
 	font-size: 14px;
 	font-weight: normal;
@@ -413,4 +436,26 @@ background-color: rgba(0,215,255,1);
 .youtube img{
 float: left;
 margin-right:0px;
+		
 }
+#ScrollUp img{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 1px;
+	color: white;
+}
+#ScrollUp{
+	position: absolute;
+	position: fixed;
+	right: 5px;
+	text-align: center;
+	border-radius: 50%;
+	bottom: 40px;
+	width: 40px;
+	height:40px;
+	background: linear-gradient(35deg,#FCD005,#F18049);
+}
+ 
+
+
