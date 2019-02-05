@@ -450,7 +450,9 @@ font-weight: bold;
 	width: 500px;
     height: 30px;
     animation: animate2 4s linear infinite;
+    -webkit-animation: animate2 4s linear infinite;
     animation-delay: .25s;
+    -webkit-animation-delay: .25s;
     color: #fff;
 }
 .sm_hide{
@@ -460,6 +462,27 @@ font-weight: bold;
 	display: block;
 }
 @keyframes animate2{
+ 0%{
+        margin-top:5px;
+    }
+    10%{
+        margin-top:0px;
+   
+    }
+    25%{
+            margin-top:0px;
+    }
+    40%{ margin-top:-25px;  }
+    60%{ margin-top:-25px;  }
+
+    70%{
+         margin-top:-55px;
+    }
+    90%{margin-top:-55px;}
+    100%{margin-top:-70px;}
+}
+@-webkit-keyframes animate2{
+	
  0%{
         margin-top:5px;
     }
