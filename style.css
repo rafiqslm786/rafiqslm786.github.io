@@ -172,8 +172,8 @@ left: 10%;
 	color: #1f212c;
 }
 .card img {
-	width: 100%;
-	height: 170px;
+    width: 100%;
+    height: 200px;
 }
 .contuct_details h4{
 	color: #5e5b5b;
@@ -181,6 +181,43 @@ left: 10%;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	
+}
+.card img{
+	position: relative;
+	overflow: hidden;
+}
+
+  .card{
+	  overflow: hidden;
+	  transition: .5s all;
+	transition-delay: .5s;
+    margin: 15px 20px;
+  }         
+.card .fig{
+	position: absolute;
+	width: 100%;
+	height: 211px;
+	background:rgba(0,0, 0, .5);
+	top: -999px;
+	left: 0;
+		transition: .5s;
+
+}
+.card .fig button{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.card:hover>.fig{
+	top:0px;
+	transition: .5 ease-in;
+
+}
+.card:hover>img{
+	transform: scale3d(1.1,1.1,1.1);
+	transition: .5s;
 }
 .contuct_links h4, .contuct_mail h4, .contuct_links h4{
 	color: #5e5b5b;
@@ -280,43 +317,7 @@ height: 4px;
 .line_title h3 span{
 	background: #fff;
 }
-.card img{
-	position: relative;
-	overflow: hidden;
-}
 
-  .card{
-	  overflow: hidden;
-	  transition: .5s all;
-	transition-delay: .5s;
-    margin: 15px 20px;
-  }         
-.card .fig{
-	position: absolute;
-	width: 100%;
-	height: 180px;
-	background:rgba(0,0, 0, .5);
-	top: -999px;
-	left: 0;
-		transition: .5s;
-
-}
-.card .fig button{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-
-}
-.card:hover>.fig{
-	top:0px;
-	transition: .5 ease-in;
-
-}
-.card:hover>img{
-	transform: scale3d(1.1,1.1,1.1);
-	transition: .5s;
-}
 .contuct_mail input:focus{
 	border: 2px solid #7de4f7;
 }
@@ -423,6 +424,9 @@ font-weight: bold;
 .hide{
 	display: none;
 }
+.sm_hide{
+	display: block;
+}
 
 #main{
   transition:margin-left 0.5s;
@@ -430,7 +434,7 @@ font-weight: bold;
   width:100%;
 }
 
-@media only screen and(max-width:767px){
+@media (min-width:320px) and (max-width:767px){
 
  .navbar-nav {
 	padding-left: 130px;
@@ -450,7 +454,7 @@ font-weight: bold;
 }
 .slide_p_st{
     font-size: 16px;
-    line-height: 2.2;
+    line-height: 1.4;
 }
 .slide_p_st b{
  	line-height: 1.2;
@@ -468,11 +472,10 @@ font-weight: bold;
 }
 
 .rt_text {
-	
-	margin-top: 50% !important;
-	line-height: 1.4;
+	margin-top: 56% !important;
+	line-height: 1.2 !important;
 	font-weight: 300;
-	font-size: 160%;
+	font-size: 22px !important;
 	margin-bottom: 0;
 }
 .slide2 {
@@ -480,18 +483,25 @@ font-weight: bold;
 	font-size: 22px;
 	position: absolute;
     top:0;
-	width: 70%;
+	width: 100%;
     height: 30px;
     animation: animate2 4s linear infinite;
     animation-delay: .25s;
     color: #fff;
 }
-.sm_hide{
-	display: none;
-}
 .hide{
 	display: block;
 }
+.sm_hide{
+	display: none;
+}
+.scroll_img {
+	/* position: absolute; */
+	left: 90%;
+
+
+}
+
 @keyframes animate2{
  0%{
         margin-top:5px;
@@ -574,7 +584,7 @@ background: rgb(226, 226, 226);
 color: #c3c3c3;
 }
 .sm_hide{
-	line-height: 1.2;
+	line-height: 1.4;
 	font-weight: 300;
     font-size: 30px;
     overflow: hidden;
@@ -597,7 +607,7 @@ color: #c3c3c3;
     
     position: absolute;
     top:0;
-	left:21%;
+	left:20%;
 	width: 70%;
     height: 30px;
     animation: animate 5s linear infinite;
@@ -700,12 +710,17 @@ opacity: 0;
 	opacity: 1;
 	transform: scaleY(1);
 }
-.navbar-nav li a:hover{
+.navbar-nav li:hover>a{
 	text-decoration: none;
 	color:red;
 	
+	
 }
+.navbar-nav li:hover {
+	text-decoration: none;
 
+	background: #ececec;
+}
 /*------------------------Gallery CSS ----------------*/
 .side_manu{
 	display: none;
