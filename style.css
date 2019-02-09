@@ -737,3 +737,19 @@ opacity: 0;
     padding-left: 0.5rem;
 }
 }
+.google_map {
+	border: 2px #e70000 dashed;
+	border-radius: 15px;
+	text-align: center;
+
+}
+/* .bg_style{
+	background: url(images/1-1.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+} */
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
